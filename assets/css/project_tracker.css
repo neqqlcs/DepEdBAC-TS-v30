@@ -1,0 +1,159 @@
+/* Project Tracker Page Styles */
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 8vw 10vh;
+    background-color: #fdf0d3;
+    color: #333;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow-x: auto; /* For responsive table on small screens */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #555;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #eaf6ff;
+}
+
+.status-done {
+    color: #28a745; /* Green for done */
+    font-weight: bold;
+}
+
+.status-ongoing {
+    color: #ffc107; /* Orange for ongoing */
+    font-weight: bold;
+}
+
+.no-projects {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+.filter-info {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 36px; /* Increased font size for prominence */
+    font-weight: bold; /* Made it bold */
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.back-button-container {
+    margin-bottom: 20px; /* Space between button and filter info/table */
+    text-align: left; /* Align button to the left */
+}
+
+/* Updated back-button styling to match .back-btn provided */
+.back-button {
+    display: inline-block;
+    background-color: #0d47a1; /* Changed to match .back-btn */
+    color: #fff;
+    padding: 8px 12px; /* Changed to match .back-btn */
+    text-decoration: none;
+    border-radius: 4px; /* Changed to match .back-btn */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* Action Button Styles */
+.edit-project-btn, .delete-btn {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+}
+
+.edit-project-btn { 
+    background-color: #ffc107;
+    color: white; 
+}
+
+.edit-project-btn:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+.delete-btn { 
+    background-color: #dc3545; 
+    color: white; 
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+/* Styling for the images inside the action buttons */
+.edit-project-btn img, .delete-btn img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+/* Icon sizing */
+.icon-24 {
+    width: 24px;
+    height: 24px;
+}
+
+/* Action button spacing */
+.action-btn-spacing {
+    margin-right: 5px;
+}
+
+/* Project Tracker Table Column Widths */
+table th:nth-child(1), table td:nth-child(1) { width: 25%; } /* Mode of Procurement */
+table th:nth-child(2), table td:nth-child(2) { width: 12%; } /* PR Number */
+table th:nth-child(3), table td:nth-child(3) { width: 30%; } /* Project Details */
+table th:nth-child(4), table td:nth-child(4) { width: 15%; } /* Current Stage */
+table th:nth-child(5), table td:nth-child(5) { width: 8%; }  /* Status */
+table th:nth-child(6), table td:nth-child(6) { width: 10%; }  /* Actions */
